@@ -13,7 +13,7 @@ export class EventsService {
   constructor(private _http : Http){}
 
   getEvents(){
-    return this._http.get('https://cultiva-api.herokuapp.com/events/?format=json')
+    return this._http.get('https://cultiva-api.herokuapp.com/events/')
                      .map(res => res.json());
   }
 
