@@ -1,0 +1,24 @@
+<div class="event" *ngIf="event">
+  <figure class="event-featured-img">
+    <img src="{{ event.image }}" alt="{{ event.name }}">
+  </figure>
+  <h1 class="event-name">{{ event.name }}</h1>
+  <div class="event-meta">
+    <span class="event-address">{{ event.address }}</span> //
+    <span class="event-date">{{ event.date }}</span>
+  </div>
+
+  <div class="event-description">
+    <p>{{ event.description }}</p>
+  </div>
+
+  <div class="event-category">
+    <span>{{ event.category }}</span>
+  </div>
+
+  <div class="likebox">
+    <button class="like" (click)="onLike()" [class.liked]="like === true">Like</button>
+  </div>
+
+  <a routerLink="/events">More events in Bogotá</a>
+</div>

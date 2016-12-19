@@ -1,0 +1,26 @@
+.event {
+  position: relative;
+  max-width: 100%;
+  margin-bottom: .5em;
+  background: #fff;
+
+  background-repeat:no-repeat;
+  background-size:contain;
+  background-position:center;
+}
+
+.event-title {
+  position: absolute;
+  bottom: 0;
+  background: rgba(48, 65, 93, 0.9);
+  width: 100%;
+  padding: .5em
+}
+
+.event-title h2 {
+  color: #fff;
+}
+
+.event-img {
+  margin-bottom: .5em;
+}

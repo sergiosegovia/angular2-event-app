@@ -1,0 +1,14 @@
+<div>
+  <label>Event name:</label> <input class="form-control" #name />
+  <label>City:</label> <input class="form-control"  #city />
+  <label>Address:</label> <input class="form-control"  #address />
+  <label>Date:</label> <input class="form-control"  #date />
+  <label>Description:</label> <input class="form-control"  #description />
+  <button (click)="addEvent(name.value,
+                            city.value,
+                            address.value,
+                            date.value,
+                            description.value);">
+    Add
+  </button>
+</div>

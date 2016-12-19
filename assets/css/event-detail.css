@@ -1,0 +1,11 @@
+.event-featured-img img {
+  max-width: 100%;
+}
+
+.event-name {
+  padding: .5em 0;
+}
+
+.liked {
+  background: red;
+}
